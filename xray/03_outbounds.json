@@ -1,0 +1,10 @@
+{
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {
+      	"domainStrategy": "AsIs"
+      }
+    }
+  ]
+}

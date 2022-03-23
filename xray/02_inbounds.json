@@ -1,0 +1,41 @@
+{
+  "inbounds": [
+    {
+      "port": 8443,
+      "protocol": "trojan",
+      "settings": {
+    	  "clients": [
+ 	       {
+  	    "password": "e0e23870-5234-40a0-98cb-b3970bc700fc",
+    	    "level": 0
+  	  }
+        ]
+      },
+      "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tlsSettings": {
+                "alpn": [
+                    "http/1.1"
+                    ],
+                "certificates": [
+                        {
+                    "certificateFile": "/etc/cert/certificate.crt",
+                    "keyFile": "/etc/cert/private.key"
+                        }
+                    ]
+                },
+	    "wsSettings": {
+	       "path": "/trojan",
+	       "headers": {
+   	 	  "Host": ""
+		  }
+	    }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    }
+  ]
+}
