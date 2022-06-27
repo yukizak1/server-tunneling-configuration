@@ -1,15 +1,15 @@
 {
   "inbounds": [
-    {
+		{
       "port": 443,
       "protocol": "shadowsocks",
       "settings": {
         "method": "2022-blake3-aes-128-gcm",
         "password": "{{ psk }}",
         "network": "tcp,udp"
-			}
-	},		
-      "streamSettings": {
+        },
+      "streamSettings":
+        {
             "network": "ws",
             "security": "tls",
             "tlsSettings": {
@@ -23,16 +23,18 @@
                         }
                     ]
                 },
-	    "wsSettings": {
-	       "path": "/noshiro",
-	       "headers": {
-   	 	  "Host": ""
-		  }
-	    }
-      },
+            "wsSettings": {
+               "path": "/noshiro",
+               "headers": {
+                  "Host": ""
+                  }
+            }
+		},
       "sniffing": {
         "enabled": true,
         "destOverride": ["http", "tls"]
-      }
-    ]
+			}
+		}
+	]
 }
+
