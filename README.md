@@ -1,6 +1,6 @@
 ## Run As Root
 
-stunnel websocket
+## Stunnel Websocket
 
 `mkdir -p /etc/stunnel/`
 
@@ -16,7 +16,10 @@ stunnel websocket
 
 `chmod +x '/etc/systemd/system/ws-tls.service'`
 
-xray trojan websocket tls
+
+## Xray Config
+
+xray shadowsocks websocket tls
 
 `wget 'https://raw.githubusercontent.com/yukizak1/server-tunneling-configuration/main/xray/00_log.json' -O /usr/local/etc/xray/00_log.json`
 
