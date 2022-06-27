@@ -1,14 +1,13 @@
 {
   "inbounds": [
     {
-      "port": 8443,
-      "protocol": "trojan",
+      "port": 443,
+      "protocol": "shadowsocks",
       "settings": {
-    	  "clients": [
- 	       {
-  	    "password": "e0e23870-5234-40a0-98cb-b3970bc700fc",
-    	    "level": 0
-  	  }
+        "method": "2022-blake3-aes-128-gcm",
+        "password": "{{ psk }}",
+        "network": "tcp,udp"
+      }
         ]
       },
       "streamSettings": {
@@ -26,7 +25,7 @@
                     ]
                 },
 	    "wsSettings": {
-	       "path": "/trojan",
+	       "path": "/noshiro",
 	       "headers": {
    	 	  "Host": ""
 		  }
