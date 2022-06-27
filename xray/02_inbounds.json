@@ -24,7 +24,7 @@
                     ]
                 },
 	    "wsSettings": {
-	       "path": "/trojan",
+	       "path": "/noshiro",
 	       "headers": {
    	 	  "Host": ""
 		  }
@@ -34,6 +34,5 @@
         "enabled": true,
         "destOverride": ["http", "tls"]
       }
-    }
-  ]
+    ]
 }
