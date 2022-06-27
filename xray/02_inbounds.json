@@ -7,9 +7,8 @@
         "method": "2022-blake3-aes-128-gcm",
         "password": "{{ psk }}",
         "network": "tcp,udp"
-      }
-        ]
-      },
+			}
+	},		
       "streamSettings": {
             "network": "ws",
             "security": "tls",
@@ -25,7 +24,7 @@
                     ]
                 },
 	    "wsSettings": {
-	       "path": "/noshiro",
+	       "path": "/trojan",
 	       "headers": {
    	 	  "Host": ""
 		  }
